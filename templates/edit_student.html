@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talabani Tahrirlash</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+
+</head>
+<body>
+    <h1>Talabani Tahrirlash</h1>
+    
+    <form action="/students/edit/{{ student.id }}" method="post">
+        <label for="name">Ismi:</label>
+        <input type="text" id="name" name="name" value="{{ student.name }}" required>
+
+        <label for="age">Yoshi:</label>
+        <input type="number" id="age" name="age" value="{{ student.age }}" required>
+
+        <label for="major">Mutaxassisligi:</label>
+        <input type="text" id="major" name="major" value="{{ student.major }}" required>
+
+        <button type="submit">Saqlash</button>
+    </form>
+
+    <a href="/students" class="back-link">Ortga qaytish</a>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* === Umumiy Sahifa Dizayni === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Ko'k-fon */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* === Tugmalar === */
+button, .btn {
+    background-color: #28a745; /* Yashil */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #218838;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* === Tablitsa Dizayni === */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #28a745;
+    color: white;
+}
+
+/* === Form Dizayni === */
+form {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+/* === Talabalarni ko'rsatish / yashirish === */
+#studentTable {
+    transition: all 0.5s ease;
+    display: none;
+}
+
+/* === Ortga qaytish havolasi === */
+.back-link {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* === Biz haqimizda sahifasi dizayni === */
+.container {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
